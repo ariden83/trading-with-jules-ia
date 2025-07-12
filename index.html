@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation des Événements Économiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Visualisation des Événements Économiques</h1>
+        <p>
+            Veuillez sélectionner un fichier JSON généré par l'extension Chrome pour afficher les événements sur le graphique.
+        </p>
+
+        <input type="file" id="jsonFileInput" accept=".json">
+
+        <div class="chart-container">
+            <canvas id="eventsChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Chart.js et son adaptateur de date via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+
+    <!-- Notre script personnalisé -->
+    <script src="chart-script.js"></script>
+
+</body>
+</html>
