@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Investing.com Event Scraper",
+  "version": "1.0",
+  "description": "Récupère les événements économiques de Investing.com et les sauvegarde en JSON.",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "downloads",
+    "alarms",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://ecal.investing.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
